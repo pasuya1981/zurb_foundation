@@ -1,5 +1,14 @@
 source 'https://rubygems.org'
 
+gem 'devise'
+
+# Auto layout
+gem 'rails_layout', group: :development
+
+# Bootstrap related gems
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 group :development, :test do
   gem 'faker'
   gem 'annotate'
