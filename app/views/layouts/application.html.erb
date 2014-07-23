@@ -13,11 +13,12 @@
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
+       <%= render 'shared/flash_messages' %>
        <%= yield %>
     </main>
     <footer>
-      <div class="carousel"><%= render 'layouts/carousel' %></div>
+      <%= render 'layouts/carousel' %>
     </footer>
+      <% if Rails.env == 'development' %><%= debug(params) %><% end %>
   </body>
 </html>

@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# https://github.com/alexreisner/geocoder 
+gem "geocoder" 
+
 gem 'devise'
 
 # Auto layout

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+
+  get 'users/:id/locations', to: 'locations#index'
+
+  devise_for :users do
+  end
   root to: "home#welcome"
 
   # The priority is based upon order of creation: first created -> highest priority.
