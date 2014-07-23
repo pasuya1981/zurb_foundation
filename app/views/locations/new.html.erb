@@ -1,2 +1,26 @@
-<h1>Locations#new</h1>
-<p>Find me in app/views/locations/new.html.erb</p>
+
+<%= render partial: 'shared/error_messages', locals: { obj: @location } %>
+
+<fieldset>
+  <legend>新增地點</legend>
+  <%= form_for @location, html: {rol: 'form'} do |f| %>
+  <div class="form-group">
+    <%= f.label(:name, '地點名稱') %>
+    <%= f.text_field(:name, class: 'form-control') %>
+  </div>
+  <div class="form-group">
+    <%= f.label(:address, '詳細地址') %>
+    <%= f.text_field(:address, class: 'form-control') %>
+  </div>
+  <div class="form-group">
+    <%= f.label(:description, '地點介紹') %>
+    <%= f.text_area(:description, size: '50x4', maxlength: 50, class: 'form-control') %>
+  </div>
+  <div>
+  	<%= f.submit('新增地點', :class => 'btn btn-primary') %>
+  </div>
+<% end %>
+
+</fieldset>
+
+

@@ -1,2 +1,16 @@
-<h1>Locations#show</h1>
-<p>Find me in app/views/locations/show.html.erb</p>
+<h3 class="pull-left"><span class="label label-info">顯示地點</span></h3>
+
+<table class="table table-hover">
+  <tr>
+    <td>td</td>
+  </tr>
+  <tr>
+  	<th>Google Static Map</th>
+  	<td><%= image_tag(@location.static_map_url(nil, nil)) %></td>
+  </tr>
+  <tr>
+  	<th>Street View</th>
+  	<td><%= image_tag(@location.street_image_url(nil)) %></td>
+  </tr>
+
+</table>

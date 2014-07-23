@@ -15,11 +15,13 @@
 #  last_sign_in_ip        :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
+#  username               :string(255)
 #
 
 class User < ActiveRecord::Base
 
   has_many :locations
+  validates_presence_of :username
   
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

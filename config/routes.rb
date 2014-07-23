@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :locations, only: [:new, :create, :edit, :update, :destroy, :index, :show]
   get 'users/:id/locations', to: 'locations#index'
 
   devise_for :users do

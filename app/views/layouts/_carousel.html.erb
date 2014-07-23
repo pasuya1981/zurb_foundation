@@ -1,40 +1,49 @@
-<div class="carousel" style="visibility:hidden">  
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>  
+<div class="row">
+  <div class="col-xs-2">col-xs-2</div>
+  <div class="col-xs-8">
+ 
+    <div class="carousel" >  
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>      
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <%= image_tag('bike_01.jpg', size: '400x200') %>
-        <div class="carousel-caption">
-          Bike 01
-        </div>
-      </div>
-      <div class="item">
-        <%= link_to(image_tag('bike_02.jpg', size: '400x200'), 'http://www.google.com') %>
-        <div class="carousel-caption">
-          Bike 02
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag('bike_03.jpg', size: '400x200') %>
-        <div class="carousel-caption">
-          Bike 03
-        </div>
-      </div>
-    </div>  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <%= image_tag('bike_01.jpg', size: '400x200') %>
+            <div class="carousel-caption">
+              Bike 01
+            </div>
+          </div>
+          <div class="item">
+            <%= link_to(image_tag('bike_02.jpg', size: '400x200'), 'http://www.google.com') %>
+            <div class="carousel-caption">
+              Bike 02
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag('bike_03.jpg', size: '400x200') %>
+            <div class="carousel-caption">
+              Bike 03
+            </div>
+          </div>
+        </div>      
 
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>    
+
   </div>
+  <div class="col-xs-2">col-xs-2</div>
+
 </div>
