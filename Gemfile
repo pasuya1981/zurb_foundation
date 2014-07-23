@@ -17,6 +17,11 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0.rc1'
 # Use mysql as the database for Active Record
