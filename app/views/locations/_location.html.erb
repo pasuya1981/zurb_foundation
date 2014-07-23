@@ -1,0 +1,11 @@
+<tr>
+  <td><%= location.name %></td>
+  <td><%= location.address %></td>
+  <td><%= location.longitude %></td>
+  <td><%= location.latitude %></td>
+  <td>
+    <%= link_to('進入', location_path(location), class: 'label label-info') %>
+    <%= link_to('編輯', edit_location_path(location), class: 'label label-primary') %>
+    <%= link_to('刪除', location_path(location), class: 'label label-danger', method: :delete, remote: true, data: {confirm: '確定刪除?'}) %>
+  </td>
+</tr>

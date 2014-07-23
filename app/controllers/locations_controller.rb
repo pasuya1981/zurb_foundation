@@ -36,7 +36,8 @@ class LocationsController < ApplicationController
   	@location = Location.find(params[:id])
     respond_to do |format|
       if @location.destroy
-        format.html { redirect_to locations_path, notice: "已刪除一個地點" }
+        #format.html { redirect_to locations_path, notice: "已刪除一個地點" }
+        format.js { @locations = Location.sorted if Location.any? }
       else
         
       end
